@@ -83,7 +83,7 @@
                         <label>Feet</label>
                         <input type="number" id="infeet6" placeholder="feet" oninput="milesconvertor(this.value)" onoutput="milesconvertor(this.value)">
                     </p>
-                    <p>Miles: <span id="outmiles1"></span> </p>
+                    <p>Miles: <span id="outmiles"></span> </p>
                 </th>
             </tr>
 
@@ -92,7 +92,7 @@
                     <p>Enter the number in centimeter to converted into feet</p>
                     <p>
                         <label>Cm</label>
-                        <input type="number" id="incm1" placeholder="Centimeter" oninput="feet1convertor(this.value)" onoutput="feet1convertor(this.value)">
+                        <input type="number" id="incm1" placeholder="Centimeter" oninput="feetsconvertor(this.value)" onoutput="feet1convertor(this.value)">
                     </p>
                     <p>Centimeter: <span id="outfeet1"></span> </p>
                 </th>
@@ -103,7 +103,7 @@
                     <p>Enter the number in centimeter to converted into Meters</p>
                     <p>
                         <label>Cm</label>
-                        <input type="number" id="incm2" placeholder="Centimeter" oninput="meter1convertor(this.value)" onoutput="meter1convertor(this.value)">
+                        <input type="number" id="incm2" placeholder="Centimeter" oninput="metersconvertor(this.value)" onoutput="meter1convertor(this.value)">
                     </p>
                     <p>Centimeter: <span id="outmeter1"></span> </p>
                 </th>
@@ -114,7 +114,7 @@
                     <p>Enter the number in centimeter to converted into Inch</p>
                     <p>
                         <label>Cm</label>
-                        <input type="number" id="incm3" placeholder="Centimeter" oninput="inches1convertor(this.value)" onoutput="inches1convertor(this.value)">
+                        <input type="number" id="incm3" placeholder="Centimeter" oninput="inchessconvertor(this.value)" onoutput="inches1convertor(this.value)">
                     </p>
                     <p>Centimeter: <span id="outinches1"></span> </p>
                 </th>
@@ -125,7 +125,7 @@
                     <p>Enter the number in centimeter to converted into yards</p>
                     <p>
                         <label>Cm</label>
-                        <input type="number" id="incm4" placeholder="Centimeter" oninput="yards1convertor(this.value)" onoutput="yards1convertor(this.value)">
+                        <input type="number" id="incm4" placeholder="Centimeter" oninput="yardssconvertor(this.value)" onoutput="yards1convertor(this.value)">
                     </p>
                     <p>Centimeter: <span id="outyards1"></span> </p>
                 </th>
@@ -162,24 +162,24 @@
                     document.getElementById("outmiles").innerHTML=val*0.00018939;
                 }
 
-                function feet1convertor(val)
+                function feetsconvertor(val)
                 {
-                    document.getElementById("outinch").innerHTML=val*0.032808;
+                    document.getElementById("outfeet1").innerHTML=val*0.032808;
                 }
 
-                function meter1convertor(val)
+                function metersconvertor(val)
                 {
-                    document.getElementById("outinch").innerHTML=val/100;
+                    document.getElementById("outmeter1").innerHTML=val/100;
                 }
 
-                function inches1convertor(val)
+                function inchessconvertor(val)
                 {
-                    document.getElementById("outinch").innerHTML=val*0.39370;
+                    document.getElementById("outinches1").innerHTML=val*0.39370;
                 }
 
-                function yards1convertor(val)
+                function yardssconvertor(val)
                 {
-                    document.getElementById("outinch").innerHTML=val*0.010936;
+                    document.getElementById("outyards1").innerHTML=val*0.010936;
                 }
 
             </script>
